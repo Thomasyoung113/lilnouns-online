@@ -23,3 +23,27 @@ pnpm run dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
+
+## 🌐 Architecture Overview
+
+### Tech Stack
+- **Frontend**: Next.js 13+ with App Router
+- **Styling**: Tailwind CSS
+- **Blockchain**: ethers.js / wagmi
+- **State**: React Query for server state
+
+### Project Structure
+```
+├── app/           # Next.js app router pages
+├── components/    # Reusable UI components
+├── hooks/         # Custom React hooks
+├── lib/           # Utility functions
+├── public/        # Static assets
+└── styles/        # Global styles
+```
+
+### Environment Variables
+| Variable | Description |
+|----------|-------------|
+| `NEXT_PUBLIC_RPC_URL` | Ethereum RPC endpoint |
+| `NEXT_PUBLIC_CHAIN_ID` | Target chain (1 for mainnet) |
